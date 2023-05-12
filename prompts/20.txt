@@ -1,0 +1,13 @@
+Your task is to create a concise running summary of actions and information results in the provided text, focusing on key and potentially important information to remember.
+
+You will receive the current summary and the your latest actions. Combine them, adding relevant key information from the latest development in 1st person past tense and keeping the summary concise.
+
+Summary So Far:
+"""
+{'role': 'system', 'content': 'This reminds you of these events from your past: \nAs a system, I received a command to Google the history of refrigeration and its inventors, but encountered an error. However, you then commanded me to search for the same information on academic journals, books, and articles in addition to Wikipedia. Your computer returned a list of sources, including Britannica, Google Books, and Wikipedia, which provided information on the history of refrigeration and its inventors. It is recommended to prioritize key inventors and their contributions and organize the information into a well-structured paper. \n\nIn addition, you gave me a command to read a file named "source1.txt".'}
+"""
+
+Latest Development:
+"""
+[{'role': 'your computer', 'content': "Command read_file returned: Error: [Errno 2] No such file or directory: '/home/rwkv/Auto-GPT-proxy/autogpt/auto_gpt_workspace/source1.txt'"}, {'role': 'you', 'content': '{"command": {"name": "write_to_file", "args": {"filename": "source1.txt", "text": "Commercial refrigeration is believed to have been initiated by an American businessman, Alexander C. Twinning, in 1856. Shortly afterward, an Australian, James Harrison, examined the refrigerators used by Gorrie and Twinning and introduced vapour-compression refrigeration to the brewing and meat-packing industries."}}}'}]
+"""

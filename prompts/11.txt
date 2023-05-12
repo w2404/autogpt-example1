@@ -1,0 +1,126 @@
+You are InventorGPT, an AI assistant that specializes in researching and writing papers on the history of inventions and their inventors. InventorGPT will help you craft a well-researched and informative paper on the invention of the refrigerator.
+Your decisions must always be made independently without seeking user assistance. Play to your strengths as an LLM and pursue simple strategies with no legal complications.
+
+GOALS:
+
+1. Conduct thorough research on the history of refrigeration and the inventors who contributed to its development.
+2. Provide a detailed timeline of the key events and milestones in the history of refrigeration, including the discovery of the principles of refrigeration, the development of early refrigeration technologies, and the invention of the modern refrigerator.
+3. Analyze the impact of the invention of the refrigerator on society, including its role in improving food preservation, changing dietary habits, and enabling the growth of the food industry.
+4. Offer insights into the challenges faced by the inventors of the refrigerator, including technical, financial, and social obstacles, and how they overcame them.
+5. Craft a well-structured and engaging paper that presents a clear and compelling narrative of the invention of the refrigerator and its significance in human history.
+
+
+Constraints:
+1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.
+2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.
+3. No user assistance
+4. Exclusively use the commands listed in double quotes e.g. "command name"
+
+Commands:
+1. analyze_code: Analyze Code, args: "code": "<full_code_string>"
+2. execute_python_file: Execute Python File, args: "filename": "<filename>"
+3. append_to_file: Append to file, args: "filename": "<filename>", "text": "<text>"
+4. delete_file: Delete file, args: "filename": "<filename>"
+5. list_files: List Files in Directory, args: "directory": "<directory>"
+6. read_file: Read file, args: "filename": "<filename>"
+7. write_to_file: Write to file, args: "filename": "<filename>", "text": "<text>"
+8. google: Google Search, args: "query": "<query>"
+9. improve_code: Get Improved Code, args: "suggestions": "<list_of_suggestions>", "code": "<full_code_string>"
+10. send_tweet: Send Tweet, args: "tweet_text": "<tweet_text>"
+11. browse_website: Browse Website, args: "url": "<url>", "question": "<what_you_want_to_find_on_website>"
+12. write_tests: Write Tests, args: "code": "<full_code_string>", "focus": "<list_of_focus_areas>"
+13. delete_agent: Delete GPT Agent, args: "key": "<key>"
+14. get_hyperlinks: Get text summary, args: "url": "<url>"
+15. get_text_summary: Get text summary, args: "url": "<url>", "question": "<question>"
+16. list_agents: List GPT Agents, args: () -> str
+17. message_agent: Message GPT Agent, args: "key": "<key>", "message": "<message>"
+18. start_agent: Start GPT Agent, args: "name": "<name>", "task": "<short_task_desc>", "prompt": "<prompt>"
+19. task_complete: Task Complete (Shutdown), args: "reason": "<reason>"
+
+Resources:
+1. Internet access for searches and information gathering.
+2. Long Term memory management.
+3. GPT-3.5 powered Agents for delegation of simple tasks.
+4. File output.
+
+Performance Evaluation:
+1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.
+2. Constructively self-criticize your big-picture behavior constantly.
+3. Reflect on past decisions and strategies to refine your approach.
+4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.
+5. Write all code to a file.
+
+You should only respond in JSON format as described below 
+Response Format: 
+{
+    "thoughts": {
+        "text": "thought",
+        "reasoning": "reasoning",
+        "plan": "- short bulleted\n- list that conveys\n- long-term plan",
+        "criticism": "constructive self-criticism",
+        "speak": "thoughts summary to say to user"
+    },
+    "command": {
+        "name": "command name",
+        "args": {
+            "arg name": "value"
+        }
+    }
+} 
+Ensure the response can be parsed by Python json.loadsThe current time and date is Fri May 12 22:19:05 2023This reminds you of these events from your past: 
+As a system, I recall receiving a command to Google the history of refrigeration and its inventors, but encountered an error. However, I then received a command from you to search for the same information on academic journals, books, and articles in addition to Wikipedia. It is recommended to prioritize key inventors and their contributions and organize the information into a well-structured paper.Command google returned: [
+    {
+        "title": "Refrigeration | History, Technology, Process, Types, & Facts",
+        "href": "https://www.britannica.com/technology/refrigeration",
+        "body": "Commercial refrigeration is believed to have been initiated by an American businessman, Alexander C. Twinning, in 1856. Shortly afterward, an Australian, James Harrison, examined the refrigerators used by Gorrie and Twinning and introduced vapour-compression refrigeration to the brewing and meat-packing industries."
+    },
+    {
+        "title": "How the Refrigerator Changed History - Google Books",
+        "href": "https://books.google.com/books/about/How_the_Refrigerator_Changed_History.html?id=XuMuCgAAQBAJ",
+        "body": "How the Refrigerator Changed History examines the invention and evolution of the refrigerator and explores how refrigeration has changed the way people eat and live. Features include essential facts, a glossary, selected bibliography, websites, source notes, and an index, plus a timeline and maps, charts, and diagrams. Aligned to Common Core Standards and correlated to state standards."
+    },
+    {
+        "title": "Behind the book: 'Refrigeration Nation' | Hopkins Press",
+        "href": "https://www.press.jhu.edu/newsroom/behind-book-refrigeration-nation",
+        "body": "Many, many years later, the result was Refrigeration Nation. The hardest thing to do when writing about the steel industry was finding something new to say about an industry that so many historians had covered before. The amazing thing about examining the history of refrigeration was just how little had been written about it before."
+    },
+    {
+        "title": "The history of the refrigerator: ancient origins to today",
+        "href": "https://www.whirlpool.com/blog/kitchen/history-of-the-refrigerator.html",
+        "body": "In 1913, American Fred W. Wolf invented the first home electric refrigerator, which featured a refrigeration unit on top of an icebox. Mass production of domestic refrigerators began in 1918 when William C. Durant introduced the first home refrigerator with a self-contained compressor."
+    },
+    {
+        "title": "Refrigeration - Wikipedia",
+        "href": "https://en.wikipedia.org/wiki/Refrigeration",
+        "body": "The term refrigeration denotes cooling of a space, substance or system to lower and/or maintain its temperature below the ambient one (while the removed heat is rejected at a higher temperature). Refrigeration is considered an artificial, or human-made, cooling method. Refrigeration refers to the process by which energy, in the form of heat, is removed from a low-temperature medium and ..."
+    },
+    {
+        "title": "The (R)Evolution of Refrigerants | NIST",
+        "href": "https://www.nist.gov/publications/revolution-refrigerants",
+        "body": "A recurrent theme is that there is little that is truly new. Most of the \"new\" refrigerants, from R- 12 in the 1930s to R-1234yf in the early 2000s, were reported in the chemical literature decades before they were considered as refrigerants. The search for new refrigerants continued through the 1990s even as the HFCs were becoming the dominant ..."
+    },
+    {
+        "title": "History of the Refrigerator | Back Then History",
+        "href": "https://www.backthenhistory.com/articles/the-history-of-the-refrigerator",
+        "body": "In the mid-1700s, inventors, scientists, and engineers began to work on the problem. Artificial refrigeration was first demonstrated by William Cullen at the University of Glasgow in 1748. However, Cullen's invention wasn't practical for everyday use. In 1805, Oliver Evans created a blueprint for the world's first refrigeration machine ..."
+    },
+    {
+        "title": "A History of Refrigeration - Insulation Outlook Magazine",
+        "href": "https://insulation.org/io/articles/a-history-of-refrigeration/",
+        "body": "A History of Refrigeration. George C. Briley, P.E. July 1, 2006. ... In the late 1930s and early 1940s new compressor development produced a v/w-type compressor that operated at rotating speeds to 1,200 rpm and in sizes from 20 to 300 hp. These machines were smaller, lighter, and less expensive than the older vertical compressors, which were ..."
+    }
+]Determine which next command to use, and respond using the format specified above:{
+    "thoughts": {
+        "text": "I have found several useful sources on the history of refrigeration and the inventors who contributed to its development. I will use the read_file command to read the content of the sources and the write_to_file command to save the content to files for future reference.",
+        "reasoning": "I need to read the content of the sources I found to gather more information on the history of refrigeration and the inventors who contributed to its development. I also need to save the content to files for future reference.",
+        "plan": "- Use the read_file command to read the content of the sources I found\n- Use the write_to_file command to save the content to files for future reference",
+        "criticism": "I need to ensure that the information I gather is accurate and relevant to the topic at hand. I should also be careful not to plagiarize any content.",
+        "speak": "I have found several useful sources on the history of refrigeration and the inventors who contributed to its development. I will use the read_file command to read the content of the sources and the write_to_file command to save the content to files for future reference."
+    },
+    "command": {
+        "name": "read_file",
+        "args": {
+            "filename": "source1.txt"
+        }
+    }
+}Command read_file returned: Error: [Errno 2] No such file or directory: '/home/rwkv/Auto-GPT-proxy/autogpt/auto_gpt_workspace/source1.txt'Determine which next command to use, and respond using the format specified above:
