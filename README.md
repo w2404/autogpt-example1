@@ -4,6 +4,7 @@ autogpt是prompt工程的结晶，它把你的需求，通过prompt工程进行�
 
 下面开始分析这些prompt和它们的返回结果，每一条分析对应的文件都存在这个repo中，举例来说，下面第一条分析对应的prompt存储在[prompts/1.txt](prompts/1.txt)中，而chatgpt的返回结果存储在[responses/1.txt](responses/1.txt)中。
 
+根据prompt中的信息互相之间的继承关系，我会把它们成为主线或支线。
 
 1. 首先，我们给出的任务是“写一篇关于冰箱如何发明的论文”。
    autogpt将其包装为prompt。注意这里都是开发者根据prompt经验手写的静态prompt，而不是AI生成的。
